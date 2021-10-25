@@ -1,6 +1,7 @@
 
-var ceremony = ["道下ブライダル","ミッチー牧場","耕太郎神社","クロワッサン","道下バターマリン"];
+var ceremony = ["THE STYLE","アーヴェリール迎賽館　岡山","ラヴィール岡山","ヴェルジェくらしき","森の邸宅　彩音","風ノウタ"];
 
+//読み込み時の処理
 window.onload = function(){
     var parentDiv = document.getElementById("ceremonylist");
     for(var i = 0;i < ceremony.length;i++){
@@ -11,6 +12,7 @@ window.onload = function(){
     }
 }
 
+//検索ボタンをクリックした時の処理
 function Serch(){
     var parentDiv = document.getElementById("ceremonylist");
     var serchword = new RegExp(document.getElementById("serchword").value);
