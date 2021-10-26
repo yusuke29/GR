@@ -1,6 +1,7 @@
 
 var ceremony = ["THE STYLE","アーヴェリール迎賽館　岡山","ラヴィール岡山","ヴェルジェくらしき","森の邸宅　彩音","風ノウタ"];
-var ceremonylink = ["thestyle.html","arveril.html","ravil.html","velju.html","forest.html","wind.html"]
+var ceremonylink = ["thestyle.html","arveril.html","ravil.html","velju.html","forest.html","wind.html"];
+var ceremonyalea = ["岡山","倉敷","総社","新見","津山","神戸"];
 
 //読み込み時の処理
 window.onload = function(){
@@ -18,6 +19,9 @@ function Serch(){
     }
     for(var i = 0;i < ceremony.length;i++){
         if(serchword.test(ceremony[i])){
+            addElement(i);
+        }
+        else(serchword.test(ceremonyalea[i])){
             addElement(i);
         }
     }
