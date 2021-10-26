@@ -21,7 +21,7 @@ function Serch(){
         if(serchword.test(ceremony[i])){
             addElement(i);
         }
-        else(serchword.test(ceremonyalea[i])){
+        else if(serchword.test(ceremonyalea[i])){
             addElement(i);
         }
     }
