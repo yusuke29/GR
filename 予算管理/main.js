@@ -60,6 +60,8 @@ document.addEventListener("DOMContentLoaded",function(){
             var sscc = 0;
             sscc = cook * people.value;
             document.getElementById('sc').innerHTML = sscc;
+
+            document.getElementById('total').innerHTML = howmuch.value;
         },
         cake:function(){
             p[1].innerHTML = people.value;
@@ -69,6 +71,8 @@ document.addEventListener("DOMContentLoaded",function(){
             var ssww = 0;
             ssww = cake * people.value;
             document.getElementById('sw').innerHTML = ssww;
+
+            document.getElementById('total').innerHTML = howmuch.value;
         },
         pull:function(){
             p[2].innerHTML = people.value;
@@ -78,10 +82,92 @@ document.addEventListener("DOMContentLoaded",function(){
             var sspp = 0;
             sspp = pull * people.value;
             document.getElementById('sp').innerHTML = sspp;
-        },
-        total:function(){
-        
+
             document.getElementById('total').innerHTML = howmuch.value;
+        }
+    }
+
+    var color = {
+        cook:function(){
+            if(one.disabled){
+                one.style.backgroundColor = "green";
+            }else{
+                one.style.backgroundColor = "#72ac21";
+            }
+            if(two.disabled){
+                two.style.backgroundColor = "green";
+            }else{
+                two.style.backgroundColor = "#72ac21";
+            }
+            if(thr.disabled){
+                thr.style.backgroundColor = "green";
+            }else{
+                thr.style.backgroundColor = "#72ac21";
+            }
+            if(fou.disabled){
+                fou.style.backgroundColor = "green";
+            }else{
+                fou.style.backgroundColor = "#72ac21";
+            }
+            if(fiv.disabled){
+                fiv.style.backgroundColor = "green";
+            }else{
+                fiv.style.backgroundColor = "#72ac21";
+            }
+        },
+        cake:function(){
+            if(oneone.disabled){
+                oneone.style.backgroundColor = "green";
+            }else{
+                oneone.style.backgroundColor = "#72ac21";
+            }
+            if(twotwo.disabled){
+                twotwo.style.backgroundColor = "green";
+            }else{
+                twotwo.style.backgroundColor = "#72ac21";
+            }
+            if(thrthr.disabled){
+                thrthr.style.backgroundColor = "green";
+            }else{
+                thrthr.style.backgroundColor = "#72ac21";
+            }
+            if(foufou.disabled){
+                foufou.style.backgroundColor = "green";
+            }else{
+                foufou.style.backgroundColor = "#72ac21";
+            }
+            if(fivfiv.disabled){
+                fivfiv.style.backgroundColor = "green";
+            }else{
+                fivfiv.style.backgroundColor = "#72ac21";
+            }
+        },
+        pull:function(){
+            if(oneoneone.disabled){
+                oneoneone.style.backgroundColor = "green";
+            }else{
+                oneoneone.style.backgroundColor = "#72ac21";
+            }
+            if(twotwotwo.disabled){
+                twotwotwo.style.backgroundColor = "green";
+            }else{
+                twotwotwo.style.backgroundColor = "#72ac21";
+            }
+            if(thrthrthr.disabled){
+                thrthrthr.style.backgroundColor = "green";
+            }else{
+                thrthrthr.style.backgroundColor = "#72ac21";
+            }
+            if(foufoufou.disabled){
+                foufoufou.style.backgroundColor = "green";
+            }else{
+                foufoufou.style.backgroundColor = "#72ac21";
+            }
+            if(fivfivfiv.disabled){
+                fivfivfiv.style.backgroundColor = "green";
+            }else{
+                fivfivfiv.style.backgroundColor = "#72ac21";
+            }
         }
     }
 
@@ -218,18 +304,18 @@ document.addEventListener("DOMContentLoaded",function(){
     document.getElementById('cook').addEventListener('click',function(){
         money.sum();
         inner.cook();
-        inner.total();
+        color.cook();
     })
 
     document.getElementById('cake').addEventListener('click',function(){
         money.sum();
         inner.cake();
-        inner.total();
+        color.cake();
     })
 
     document.getElementById('pull').addEventListener('click',function(){
         money.sum();
         inner.pull();
-        inner.total();
+        color.pull();
     })
 })
