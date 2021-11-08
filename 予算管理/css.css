@@ -12,3 +12,14 @@
 .button:active{
     background: #69821b;
 }
+
+.price{
+    background-color: lightblue;
+    width: 170px;
+}
+.row{
+    width: 10%;
+}
+.other{
+    width:98%;
+}
