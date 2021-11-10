@@ -1,20 +1,5 @@
-.button{
-    padding: 40px;
-    width: 180px;
-    border: 3px;
-    font-size: 17px;
-    color:white;
-    background-color: #72ac21;
-}
-.button:hover{
-    background: rgb(168, 187, 169);
-}
-.button:active{
-    background: #69821b;
-}
 
 .price{
-    background-color: lightblue;
     width: 170px;
 }
 .row{
@@ -22,4 +7,25 @@
 }
 .other{
     width:98%;
+    border-style:none;
+}
+.quan{
+    width:40px;
+    border-style:none;
+}
+.much{
+    border-style:none;
+}
+.memo{
+    border-style:none;
+}
+#sum{
+    width:8px;
+
+}
+#diff{
+    width: 400px;
+}
+.txt{
+    width: 100%;
 }
