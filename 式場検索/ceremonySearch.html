@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>式場検索</title>
+        <script src="ceremonySearch.js"></script>
+        <link href="ceremonySearch.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>式場の名前を入力し、検索ボタンを押してください</h1>
+        <input type="text" id="searchword" placeholder="式場名・エリアを入力する">
+        <input type="button" value="検索" id="search" onclick="Search()" >
+        <!-- <input type="button" value="エリアを選択" onclick='Jump("areaSearch.html")'> -->
+        <button id="modalOpen" >Click Me</button>
+        <ul id="ceremonylist">　
+        </ul>
+
+
+
+
+
+        
+        <div id="easyModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>エリアを選択</h1>
+                    <span class="modalClose">×</span>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div id="pf">
+                            <input type="radio" name="prefectures" value="0" onchange="pfCheck(this)">岡山
+                            <input type="radio" name="prefectures" value="1" onchange="pfCheck(this)">広島
+                            <input type="radio" name="prefectures" value="2" onchange="pfCheck(this)">山口
+                            <input type="radio" name="prefectures" value="3" onchange="pfCheck(this)">鳥取
+                            <input type="radio" name="prefectures" value="4" onchange="pfCheck(this)">島根
+                        </div>
+                        <div id="area">
+                
+                        </div>
+                        <button >fdf</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
